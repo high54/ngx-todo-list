@@ -1,0 +1,24 @@
+<section id="todos">
+    <p><strong>Vous avez {{ countTodos }} tâche(s) restante(s)</strong></p>
+    <mat-form-field class="full-width">
+        <mat-label>Ajouter une tâche</mat-label>
+        <input type="text" matInput (change)="addTodo($event)">
+    </mat-form-field>
+
+    <app-todo *ngFor="let todo of todos" [todo]="todo" (todoChange)="updateTodo()" (deleteTodo)="removeTodo($event)">
+    </app-todo>
+
+    <mat-accordion [hidden]="isHidden">
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Terminée(s) {{ countCompleted}}
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <app-todo *ngFor="let todo of todosCompleted" [todo]="todo" (todoChange)="updateTodo()"
+                (deleteTodo)="removeTodo($event)"></app-todo>
+        </mat-expansion-panel>
+    </mat-accordion>
+
+
+</section>

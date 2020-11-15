@@ -1,0 +1,19 @@
+.todo {
+    display: grid;
+    grid-template-columns: 10% 70% 20%;
+    line-height: 4rem;
+    background-color: rgba(218, 218, 218, 0.24);
+    border-radius: 3px;
+    margin-bottom: 0.125rem;
+    padding-left: 0.250rem;
+}
+.todo-title {
+    display: inline-block;
+    font-weight: 500;
+}
+.completed  {
+    text-decoration: line-through;
+}
+.margin {
+    margin: 0 10px;
+}
