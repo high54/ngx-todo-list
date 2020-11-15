@@ -22,11 +22,11 @@ npm install
 ```
 Cela va installer toutes les dépendances de development et de production.
 
-Maintenant démarrer simplement la tâche pour démarrer le serveur :
+Maintenant exécuter simplement la tâche pour démarrer le serveur :
 
 ```
 yarn start
 # OU
 npm start
 ```
-Visitez localhost:4200 pour démarrer !
+Visitez localhost:4200 pour commencer !
